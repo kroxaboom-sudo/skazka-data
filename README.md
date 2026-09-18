@@ -1,23 +1,27 @@
 # Skazka Data
 
-**RU:** Общие local-first компоненты хранения, синхронизации и резервного копирования.
+> RU — основной язык · EN — required second language
 
-**EN:** Shared local-first storage, sync and backup components.
+## RU
 
-## Что здесь будет / What belongs here
+Общие компоненты локального хранения, синхронизации и резервного копирования.
 
-- storage contracts;
-- локальное состояние;
-- Sync Core;
-- Backup Core;
-- backup/restore metadata;
-- проверка целостности;
-- hooks для расписания и фонового запуска.
+**Текущий статус:** репозиторий создан как целевая граница модуля. Рабочий код переносится из существующих проектов поэтапно, с тестами и без копирования project-specific зависимостей.
 
-## Граница / Boundary
+**Граница модуля:** storage/sync/backup contracts and reusable implementations.
 
-Публичный репозиторий содержит движки и contracts, но не пользовательские резервные копии, cloud credentials или production-конфигурацию хранилища.
+Перед первым стабильным релизом здесь появятся собственные versioning, тесты, changelog и лицензия. До выбора лицензии публикация кода не означает автоматическое разрешение на его повторное использование.
 
-## Основной принцип / Main principle
+## EN
 
-Приложение остаётся полезным офлайн. Сеть и сервер расширяют возможности, но не становятся единственной точкой хранения пользовательского состояния.
+Shared local storage, synchronization, and backup components.
+
+**Current status:** this repository is the target module boundary. Working code is being extracted from existing projects incrementally, with tests and without copying project-specific dependencies.
+
+**Module boundary:** storage/sync/backup contracts and reusable implementations.
+
+Before the first stable release, this repository will get its own versioning, tests, changelog, and license. Until a license is selected, publishing the source does not automatically grant reuse rights.
+
+## Development rules / Правила разработки
+
+See [DEVELOPMENT_RULES.md](DEVELOPMENT_RULES.md).
