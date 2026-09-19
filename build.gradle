@@ -1,0 +1,4 @@
+allprojects {
+    group = 'com.kroxaboom.skazka'
+    version = '0.1.0-preview'
+}
