@@ -1,0 +1,2 @@
+rootProject.name = 'SkazkaData'
+include ':backup-core'
